@@ -10,7 +10,8 @@
 
 body{
 	margin: 0;
-	background-color: #f1aa7eff;
+	background: url('../img/corkboard-bg.jpg');
+	background-position: center;
 }
 
 	/***menu***/
