@@ -67,10 +67,6 @@ body{
 .text-content{
 	margin: 2vh 0;
 }
-.text-content span, .text-content-succeeding span{
-	background-color: white;
-	font-size: 3.3vw;
-}
 .robot-dark{
 	font-weight: 700;
 }
@@ -152,22 +148,12 @@ a:hover .icon{
 	.ribbon-mobile{
 		display: none;
 	}
-	.ribbon{
-		position; absolute;
-		padding: 2vh 0;
-		display: block;
-	}
-	.ribbon-desktop{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 37%;
-	}
 	.lumpia-wrapper{
 		height: 100%;
 		display: grid;
-		grid-template-columns: 45% 55%;
+		grid-template-columns: 2fr 4fr 2fr;
 		margin: 0 2vw;
+		margin-left: 4.3vw;
 	}
 	.social-media, .middle, .text-content{
 		display: flex;
@@ -185,33 +171,33 @@ a:hover .icon{
 	}
 	.desktop{
 		display: block;
+		font-size: 1.3vw;
+		text-align: center;
+		padding: 0;
+	}
+	h1{
+		font-style: italic;
+		font-size: 6vw;
+		color: white;
+		font-family: 'Anton', sans-serif;
 	}
 	.text-content{
 		margin: 0;
-		line-height: 0.75;
+		line-height: 0.8;
 		padding: 0;
 		text-align: right;
 	}
-	.text-content span, .text-content-succeeding span{
-		font-size: 1.4vw;
-	}
-	.narrower{
-		padding: 0;
-		padding-right: 1vw;
+	.left{
+		text-align: left;
 	}
 	#you{
-		width: 70%;
+		width: 78%;
 	}
 	.social-media{
 		margin-top: 0;
 	}
-	.desktop{
-		font-size: 1.3vw;
-		text-align: center;
-		padding: 2vh 0;
-	}
 	.desktop a{
-		font-size: 2.3vw;
+		font-size: 3vw;
 		padding: 0 1vw;
 	}
 	.desktop a:hover{
