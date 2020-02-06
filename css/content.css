@@ -149,11 +149,30 @@ h2{
 		/*****************/
 	body{
 		/*background: url('../img/corkboard-bg.jpg');*/
-		background-color: #fecb5aff;
+		background-color: #4d7a76ff;
+	}
+	.splash-page{
+		height: 100vh;
+		background: url('../img/plant-cells.jpg');
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+	}
+	.title{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+	}
+	.ultimate-lumpia-wrapper{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
 	}
 	.lumpia-wrapper{
+		height: 100vh;
+		background-color: #fecb5aff;
 		position: absolute;
-		height: 100%;
 		width: 100%;
 		display: grid;
 		grid-template-columns:60% 40%;
@@ -161,9 +180,11 @@ h2{
 	.cell{
 		margin: 2vw 0;
 		margin-left: 10vw;
+		z-index: 99;
 	}
 	.content{
 		margin-right: 5vw;
+		z-index: 99;
 	}
 	#inside-cell{
 		position: absolute;
@@ -294,6 +315,11 @@ h2{
 		font-size: 12vh;
 		line-height: 0.9;
 	}
+	.title h1{
+		color: #212529;
+		letter-spacing: 0.5vw;
+		font-size: 14vh;
+	}
 	.instructions{
 		color: #212529;
 		font-size: 1vw;
@@ -318,6 +344,123 @@ h2{
 	.show{
 		display: block;
 	}
-
+	.mega-lumpia-wrapper{
+		position: fixed;
+	    z-index: 1;
+	}
+	.plant-cell-wrapper{
+		position: relative;
+		bottom:0;
+		height: 100vh;
+		width: 100%;
+	}
+	.content-plant{
+		position: relative;
+		top:120vh;
+		margin-left: 9vw;
+		width: 40vw;
+	}
+	.content-plant, .instructions, .content-plant h2, .content-plant p {
+		color: white;
+	}
+	.content-plant h1{
+		color: #212529;
+	}
+	#cell-wall{
+		position: absolute;
+		top: 109.3vh;
+		left: 61vw;
+		width: 34%;
+	}
+	#inner{
+		position: absolute;
+		top: 119.3vh;
+		left: 62.4vw;
+		width: 26%;
+	}
+	#ribo-plant{
+		position: absolute;
+		top: 124.6vh;
+		left: 77.1vw;
+		width: 9.5%;
+	}
+	#golgi-plant{
+		position: absolute;
+		top: 159.3vh;
+		left: 73.4vw;
+		width: 8%;
+	}
+	#lyso-plant{
+		position: absolute;
+		top: 126.3vh;
+		left: 72.4vw;
+		width: 2.5%;
+	}
+	#vacuole-plant{
+		position: absolute;
+		top: 135.3vh;
+		left: 72.4vw;
+		width: 5.5%;
+	}
+	#envelope-plant{
+		position: absolute;
+		top: 149.3vh;
+		left: 79.4vw;
+		width: 6.3%;
+	}
+	#nucleus{
+		position: absolute;
+		top: 153.3vh;
+		left: 82vw;
+		width: 2.2%;
+	}
+	#perox-plant{
+		position: absolute;
+		top: 155.3vh;
+		left: 65vw;
+		width: 3.5%;
+	}
+	#smooth-endo-plant{
+		position: absolute;
+		top: 140.3vh;
+		left: 78vw;
+		width: 9%;
+	}
+	#rough-endo-plant{
+		position: absolute;
+		top: 132.9vh;
+		left: 79.2vw;
+		width: 7.3%;
+	}
+	#vesicle{
+		position: absolute;
+		top: 164.9vh;
+		left: 71.2vw;
+		width: 12.3%;
+	}
+	#mito-1{
+		position: absolute;
+		top: 130.9vh;
+		left: 69.2vw;
+		width: 3%;
+	}
+	#mito-2{
+		position: absolute;
+		top: 157.2vh;
+		left: 69vw;
+		width: 4%;
+	}
+	#chloro-1{
+		position: absolute;
+		top: 147.2vh;
+		left: 67.5vw;
+		width: 4.5%;
+	}
+	#chloro-2{
+		position: absolute;
+		top: 124.2vh;
+		left: 76vw;
+		width: 4%;
+	}
 
 }

@@ -23,15 +23,15 @@
 		
 		<div class="collapse" id="collapseExample">
 		  <div class="card card-body robot">
-				<a href = "index.html"><i>Home</i></a>
+				<a href = "#index"><i>Home</i></a>
 				<a href = "content-(2nd).html"><i>The Animal Cell</i></a>
 				<a href = "about-us-final-(3rd).html"><i>About Us</i></a>
 		  </div>
 		</div>
 		
-				<div class = "mega-lumpia-wrapper"> 
+				<div class = "mega-lumpia-wrapper" id = "navbar"> 
 					<div class = "robot robot-dark placeholder">
-						<a class = "wrapper" href = "index.html">
+						<a class = "wrapper" href = "#index">
 							<div class = "menu">	
 								<span>Home</span>
 								<div class = "icon"> <i class="fas fa-home fa-1x"></i> </div>
@@ -57,9 +57,14 @@
 						</a>	
 					</div>
 				</div>
-		
+
+
 			<main> 
-			
+				<div class = "splash-page" id = "index">
+					<div class = "title"> <h1>eukaryotes</h1> </div>
+				</div>
+
+		<div class = "ultimate-lumpia-wrapper">
 			<div class = "lumpia-wrapper"> 
 
 				<div class ="cell">
@@ -149,10 +154,102 @@
 						</div>
 
 					</div>
+				</div>
+			</div>
+
+			<div class = "plant-cell-wrapper"> 
+				<div class = "content-plant">
+					<h1> the plant cell </h1>
+					<div class = "instructions">
+						(Hover on any cell organelle to view its description.)
+					</div>
+					<div class = "box"> 
+						<div class = "hide" id="cell-wall-text">
+							<h2> cell wall </h2>
+							<p> Acts as a <b>barrier</b> between the organelles and the outside environment. It also facilitates the passage of oxygen, nutrients and water to service the cell, as well as communication and signalling between other cells. </p>
+						</div>
+						<div class = "hide" id="golgi-plant-text">
+							<h2> golgi apparatus </h2>
+							<p> Acts as the “factory” of the cell, which <b>manufactures, stores, sorts and transports</b> the vesicles made by the Rough ER. It can also produce certain macromolecules and organelles by itself, like lysosomes.  </p>
+						</div>
+						<div class = "hide" id="ribo-plant-text">
+							<h2> ribosomes </h2>
+							<p> The organelle in charge of <b>protein formation</b> needed for different cell processes. Its location determines its function, although both are structurally identical and interchangeable. Most ribosomes are suspended in the cytosol, known as <b>free ribosomes</b>, while some are attached to the Rough Endoplasmic Reticulum, now classified as a <b>bound ribosome</b>. These bound ribosomes are proteins destined for membrane inclusion, packaging with certain organelles, and export. </p>
+						</div>
+						<div class = "hide" id="rough-endo-plant-text">
+							<h2> rough endoplasmic reticulum </h2>
+							<p>Functions like the Smooth ER but has additional duties like the formation of secretory proteins that depart from the organelle and become transport vesicles for the cell. This is also the <b>main site of protein synthesis</b> due to the abundance of ribosomes. It also stores secretory proteins different from the proteins produced by free ribosomes. </p>
+						</div>
+						<div class = "hide" id="lyso-plant-text">
+							<h2>lysosome</h2>
+							<p> Performs <b>intracellular digestion</b>, most frequently phagocytosis. It also digests macromolecules through hydrolysis. As well as regularly performs autophagy, the recycling of one’s own materials. </p>
+						</div>
+						<div class = "hide" id="vacuole-plant-text">
+							<h2>vacuole</h2>
+							<p> Plants have a central vacuole, which is enclosed by a membrane called the tonoplast. It stores organic molecules and is the main repository of inorganic molecules, main disposal sites of inorganic molecules and main storage of water to prevent dehydration.</p>
+						</div>
+						<div class = "hide" id="nucleus-text">
+							<h2> nucleus </h2>
+							<p>This is the region where the majority of the <b>cell’s genetic material</b> is contained. Usually known as the ‘brain’ of the cell. In eukaryotes, this is called the nucleus which contains a nuclear envelope, nuclear lamina and chromatin which are all designed for protection of and/or transportation of signals from and to the nucleus. </p>
+						</div>
+						<div class = "hide" id="perox-plant-text">
+							<h2>peroxisome</h2>
+							<p> The oxidative organelle that <b>oxidizes fatty and amino acids in the cell </b>. It also produces hydrogen peroxide (where the name of the cell originates) as well as a catalase that counteracts its toxicity. It also produces a phospholipid precursor that starts the synthesis of lipids and carbohydrates, which then goes to the SER for further synthesis. Lastly, like the lysosome, the peroxisome also regularly performs autophagy.  </p>
+						</div>
+						<div class = "hide" id="smooth-endo-plant-text">
+							<h2> smooth endoplasmic reticulum </h2>
+							<p>Functions in <b>metabolic processes</b> like lipid synthesis, carbohydrate metabolism, and drug and poison detoxification. </p>
+						</div>
+						<div class = "hide" id="mito-plant-text">
+							<h2>mitochondrion</h2>
+							<p> The site of <b>cellular respiration that produces ATP</b>, the energy that the cell can use. Popularly known as the ‘powerhouse of the cell’ </p>
+						</div>
+						<div class = "hide" id="chloro-text">
+							<h2>chloroplast</h2>
+							<p> The <b>site of photosynthesis</b> where plants get their food and works hand in hand with the mitochondria to efficiently extract energy from sunlight, water and oxygen (ingredients of photosynthesis).</p>
+						</div>
+
+					</div>
+				</div>
+
+				<div class ="cell">
+					<img onmouseover="highlightPlant('cell-wall')" onmouseout="regPlant('cell-wall')" src="img/plant/cell-wall.png" alt="cell" id = "cell-wall"/>
+
+					<img src="img/plant/inner.png" alt="cell" id = "inner"/>
+
+					<img onmouseover="highlightPlant('ribo-plant')" onmouseout="regPlant('ribo-plant')" src="img/plant/ribo-plant.png" alt="cell" id = "ribo-plant"/>
+
+					<img src="img/plant/vesicle.png" alt="cell" id = "vesicle"/>
+
+					<img onmouseover="highlightPlant('golgi-plant')" onmouseout="regPlant('golgi-plant')" src="img/plant/golgi-plant.png" alt="cell" id = "golgi-plant"/>
+
+					<img onmouseover="highlightPlant('lyso-plant')" onmouseout="regPlant('lyso-plant')" src="img/plant/lyso-plant.png" alt="cell" id = "lyso-plant"/>
+
+					<img onmouseover="highlightPlant('vacuole-plant')" onmouseout="regPlant('vacuole-plant')" src="img/plant/vacuole-plant.png" alt="cell" id = "vacuole-plant"/>
+
+					<img src="img/plant/envelope-plant.png" alt="cell" id = "envelope-plant"/>
+
+					<img onmouseover="highlightPlant('nucleus')" onmouseout="regPlant('nucleus')" src="img/plant/nucleus.png" alt="cell" id = "nucleus"/>
+
+					<img onmouseover="highlightPlant('perox-plant')" onmouseout="regPlant('perox-plant')" src="img/plant/perox-plant.png" alt="cell" id = "perox-plant"/>
+
+					<img onmouseover="highlightPlant('smooth-endo-plant')" onmouseout="regPlant('smooth-endo-plant')" src="img/plant/smooth-endo-plant.png" alt="cell" id = "smooth-endo-plant"/>
+
+					<img onmouseover="highlightPlant('rough-endo-plant')" onmouseout="regPlant('rough-endo-plant')" src="img/plant/rough-endo-plant.png" alt="cell" id = "rough-endo-plant"/>
+					
+					<img onmouseover="highlightMitoPlant(this)" onmouseout="regMitoPlant(this)" src="img/plant/mito-1.png" alt="cell" id = "mito-1"/>
+					<img onmouseover="highlightMitoPlant(this)" onmouseout="regMitoPlant(this)" src="img/plant/mito-2.png" alt="cell" id = "mito-2"/>
+
+					<img onmouseover="highlightChloro(this)" onmouseout="regChloro(this)" src="img/plant/chloro-1.png" alt="cell" id = "chloro-1"/>
+					<img onmouseover="highlightChloro(this)" onmouseout="regChloro(this)" src="img/plant/chloro-2.png" alt="cell" id = "chloro-2"/>
+					
 
 				</div>
 
-			</div>
+
+			</div> 
+
+		</div>
 
 			</main>
 
@@ -161,6 +258,19 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 		<script type="text/javascript">
+
+			function showMenu()
+			{
+				var y = window.scrollY;
+				if (y >= 400){
+					document.getElementbyId("navbar").className = "mega-lumpia-wrapper show";
+				}
+				else{
+					document.getElementbyId("navbar").className = "mega-lumpia-wrapper hide";
+				}
+			}
+
+			window.addEventListener("scroll", showMenu);
 
 			function reg(organelle_Name) 
 			{
@@ -223,7 +333,40 @@
 				document.getElementById("ribo-8").src = "img/parts/ribo-8.png";
 				document.getElementById("ribosome-text").className = "hide";
 			}
-
+			function regPlant(organelle_Name) 
+			{
+				var organelle = organelle_Name;
+			 	document.getElementById(organelle).src = "img/plant/" + organelle + ".png"; 
+			 	document.getElementById(organelle+"-text").className = "hide";
+			}
+			function highlightPlant(organelle_Name) 
+			{
+				var organelle = organelle_Name;
+			  	document.getElementById(organelle).src = "img/plant/" + organelle + "-hl" + ".png";
+			  	document.getElementById(organelle+"-text").className = "show"; 
+			}
+			function highlightMitoPlant()
+			{
+				document.getElementById("mito-1").src = "img/plant/mito-1-hl.png";
+				document.getElementById("mito-2").src = "img/plant/mito-2-hl.png";
+				document.getElementById("mito-plant-text").className = "show";
+			}
+			function regMitoPlant()
+			{
+				document.getElementById("mito-1").src = "img/plant/mito-1.png";
+				document.getElementById("mito-2").src = "img/plant/mito-2.png";
+				document.getElementById("mito-plant-text").className = "hide";
+			}
+			function highlightChloro(){
+				document.getElementById("chloro-1").src = "img/plant/chloro-1-hl.png";
+				document.getElementById("chloro-2").src = "img/plant/chloro-2-hl.png";
+				document.getElementById("chloro-text").className = "show";
+			}
+			function regChloro(){
+				document.getElementById("chloro-1").src = "img/plant/chloro-1.png";
+				document.getElementById("chloro-2").src = "img/plant/chloro-2.png";
+				document.getElementById("chloro-text").className = "hide";
+			}
 		</script>
 
 	</body>
