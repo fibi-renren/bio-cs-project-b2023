@@ -56,125 +56,117 @@
 					</div>
 				</div>
 		
-		<main> 
-		
+			<main> 
 			
-		<div class = "lumpia-wrapper"> 
-			
-				<div class = "cell"> <img src = "img/cell-final.png"/> </div>
-				
-				<div class = "organelles"> 
-				
-					<div class = "description-box">
-							<div class = "box"> 
-								<div class = "message">
-									Hover on the list of cell organelles to view its description.
-								</div>
-							</div>
-					
-					</div>
-				
-					<div class = "the-animal">
-					
-						<div class = "head-cell"> 
-							<img src = "img/titel.png"/>
-						</div>
-						
-						<ul class = "superior-list">
-							<h2>The Cell Organelles </h2>
-							<li>Plasma Membrane
-								<div class ="desc">
-									<ul>
-										<li>cell's outer covering</li>
-										<li>separates the cell from other cells and the environment</li>
-										<li>controls what materials go in and out of the cell</li>
-									</ul>
-								
-								</div>
-							</li>
-							<li>Nucleus
-								<div class ="desc">
-									<ul>
-										<li>in charge of the cellular activities</li>
-										<li>contains information that will tell the cell what to do, what to make, and when to divide</li>
-									</ul>
-								</div>
-							</li>
-							<li>Ribosomes
-								<div class ="desc">
-									<ul>
-										<li>this is where proteins are produces or synthesized that is needed for many cell functions such as damage repairing</li>
-										<li>translates RNA into protein</li>
-									</ul>
-								</div>
-							</li>
-							<li>Smooth Endoplasmic Reticulum
-								<div class ="desc">
-									<ul>
-										<li>synthesizes carbohydrates and lipids</li>
-										<li>carbohydrate metabolism</li>
-									</ul>
-								</div>
-							</li>
-							<li>Rough Endoplasmic Reticulum
-								<div class ="desc">
-									<ul>
-										<li>defining feature is the ribosomes attached to it</li>
-										<li>synthesizes proteins and packages/folds lipids</li>
-										<li>transports proteins and lipids packaged in vesicles by the RER</li>
-									</ul>
-								</div>
-							</li>
-							<li>Golgi Apparatus
-								<div class ="desc">
-									<ul>
-										<li>helps sort out the proteins synthesized in the RER</li>
-										<li>proteins transported here are may be stored or chemically modified then packaged for delivery to the cell membrane</li>
-										<li>transports proteins and lipids packaged in vesicles by the RER</li>
-									</ul>
-								</div>
-							</li>
-							<li>Lysosome
-								<div class ="desc">
-									<ul>
-										<li>breaks down macromolecules such as nucleic acids, proteins, and polysaccharides </li>
-										<li>destroys obsolete components inside the cell</li>
-									</ul>
-								</div>
-							</li>
-							<li>Peroxisome
-								<div class ="desc special-ka">
-									<ul>
-										<li>contains enzymes that oxidize certain molecules found in the cell, 
-										notably fatty acids and amino acids which produces hydrogen peroxide</li>
-									</ul>
-								</div>
-							</li>
-							<li>Vacuole
-								<div class ="desc">
-									<ul>
-										<li>commonly smaller in animal cells but they are usually larger in plant cells</li>
-										<li>used to store materials or transport substances</li>
-									</ul>
-								</div>
-							</li>
-							<li>Mitochondrion
-								<div class ="desc">
-									<ul>
-										<li>site of cellular respiration</li>
-										<li>produces ATP which is the energy form the cell uses</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-						
-					</div>
-						
+			<div class = "lumpia-wrapper"> 
+
+				<div class ="cell">
+
+				  	<img onmouseover="highlight('plasma-membrane')" onmouseout="reg('plasma-membrane')" src="img/parts/plasma-membrane.png" alt="cell" id = "plasma-membrane"/>
+
+				 	<img id="inside-cell" src="img/parts/inside-cell.png"/>
+
+				  	<img id="envelope" src="img/parts/envelope.png"/>
+
+					<img onmouseover = "highlightRibo(this)" onmouseout = "regRibo(this)" src = "img/parts/ribosomes.png"/ id = "ribosomes">
+				   	<img onmouseover="highlightRibo(this)" onmouseout ="regRibo(this)" src ="img/parts/ribo-1.png" id= "ribo-1">
+				   	<img onmouseover="highlightRibo(this)" onmouseout ="regRibo(this)" src ="img/parts/ribo-2.png" id= "ribo-2">
+			   		<img onmouseover="highlightRibo(this)" onmouseout ="regRibo(this)" src ="img/parts/ribo-3.png" id= "ribo-3">
+			   		<img onmouseover="highlightRibo(this)" onmouseout ="regRibo(this)" src ="img/parts/ribo-5.png" id= "ribo-5">
+			   		<img onmouseover="highlightRibo(this)" onmouseout ="regRibo(this)" src ="img/parts/ribo-6.png" id= "ribo-6">
+			   		<img onmouseover="highlightRibo(this)" onmouseout ="regRibo(this)" src ="img/parts/ribo-7.png" id= "ribo-7">
+			   		<img onmouseover="highlightRibo(this)" onmouseout ="regRibo(this)" src ="img/parts/ribo-8.png" id= "ribo-8">
+
+				 	<img onmouseover="highlight('nuclues')" onmouseout="reg('nuclues')" src="img/parts/nuclues.png" alt="cell" id = "nuclues"/>
+
+				 	<img onmouseover="highlight('golgi')" onmouseout="reg('golgi')" src="img/parts/golgi.png" alt="cell" id = "golgi"/>
+
+				 	<img onmouseover="highlight('rough-endo')" onmouseout="reg('rough-endo')" src="img/parts/rough-endo.png" alt="cell" id = "rough-endo"/>
+
+				 	<img onmouseover="highlight('smooth-endo')" onmouseout="reg('smooth-endo')" src="img/parts/smooth-endo.png" alt="cell" id = "smooth-endo"/>
+
+				  	<img onmouseover="highlight('vacuole')" onmouseout="reg('vacuole')" src="img/parts/vacuole.png" alt="cell" id = "vacuole"/>
+
+				  	<img onmouseover="highlight('lyso')" onmouseout="reg('lyso')" src="img/parts/lyso.png" alt="cell" id = "lyso"/>
+
+				   	<img onmouseover="highlightMito(this)" onmouseout="regMito(this)" src="img/parts/mitochondria.png" alt="cell" id = "mitochondria"/>
+				   	<img onmouseover="highlightMito(this)" onmouseout="regMito(this)" src="img/parts/mitochondria-1.png" alt="cell" id = "mitochondria-1"/>
+
+				   	<img onmouseover="highlightPero(this)" onmouseout="regPero(this)" src = "img/parts/perox-1.png" id = "perox-1"/>
+				   	<img onmouseover="highlightPero(this)" onmouseout="regPero(this)" src = "img/parts/perox-2.png" id = "perox-2">
+
+				   	
+
+
+
+
 				</div>
-		</div>
-		</main>
+
+			</div>
+
+			</main>
+
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<script type="text/javascript">
+
+			function reg(organelle_Name) 
+			{
+				var organelle = organelle_Name;
+			 	document.getElementById(organelle).src = "img/parts/" + organelle + ".png"; 
+			}
+
+			function highlight(organelle_Name) 
+			{
+				var organelle = organelle_Name;
+			  	document.getElementById(organelle).src = "img/parts/" + organelle + "-hl" + ".png"; 
+			}
+			function highlightMito(x)
+			{
+				document.getElementById("mitochondria").src = "img/parts/mitochondria-hl.png";
+				document.getElementById("mitochondria-1").src = "img/parts/mitochondria-1-hl.png";
+			}
+			function regMito(x)
+			{
+				document.getElementById("mitochondria").src = "img/parts/mitochondria.png";
+				document.getElementById("mitochondria-1").src = "img/parts/mitochondria-1.png";
+			}
+			function highlightPero(x)
+			{
+				document.getElementById("perox-1").src = "img/parts/perox-1-hl.png";
+				document.getElementById("perox-2").src = "img/parts/perox-2-hl.png";
+			}
+			function regPero(x)
+			{
+				document.getElementById("perox-1").src = "img/parts/perox-1.png";
+				document.getElementById("perox-2").src = "img/parts/perox-2.png";
+			}
+			function highlightRibo(x)
+			{
+				document.getElementById("ribosomes").src = "img/parts/ribosomes-hl.png";
+				document.getElementById("ribo-1").src = "img/parts/ribo-1-hl.png";
+				document.getElementById("ribo-2").src = "img/parts/ribo-2-hl.png";
+				document.getElementById("ribo-3").src = "img/parts/ribo-3-hl.png";
+				document.getElementById("ribo-5").src = "img/parts/ribo-5-hl.png";
+				document.getElementById("ribo-6").src = "img/parts/ribo-6-hl.png";
+				document.getElementById("ribo-7").src = "img/parts/ribo-7-hl.png";
+				document.getElementById("ribo-8").src = "img/parts/ribo-8-hl.png";
+			}
+			function regRibo(x)
+			{
+				document.getElementById("ribosomes").src = "img/parts/ribosomes.png";
+				document.getElementById("ribo-1").src = "img/parts/ribo-1.png";
+				document.getElementById("ribo-2").src = "img/parts/ribo-2.png";
+				document.getElementById("ribo-3").src = "img/parts/ribo-3.png";
+				document.getElementById("ribo-5").src = "img/parts/ribo-5.png";
+				document.getElementById("ribo-6").src = "img/parts/ribo-6.png";
+				document.getElementById("ribo-7").src = "img/parts/ribo-7.png";
+				document.getElementById("ribo-8").src = "img/parts/ribo-8.png";
+			}
+
+		</script>
+
 	</body>
 </html>

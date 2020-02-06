@@ -114,7 +114,6 @@ h2{
 		flex-direction: row;
 		font-size: 2.5vw;
 	}
-
 	.heyo{
 		left: -18.7vw;
 	}
@@ -148,7 +147,10 @@ h2{
 		z-index: 5;
 	}
 		/*****************/
-		
+	body{
+		/*background: url('../img/corkboard-bg.jpg');*/
+		background-color: #fecb5aff;
+	}
 	.lumpia-wrapper{
 		position: absolute;
 		height: 100%;
@@ -156,87 +158,137 @@ h2{
 		display: grid;
 		grid-template-columns:60% 40%;
 	}
-	.cell img {
-		width: 100%;
-	}
-	.cell, .organelles{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin: 2vw 0;
-	}
-	.organelles{
-		display: grid;
-		grid-template-rows: 10% 90%;
-		grid-row-gap: 2vh;
-	}
 	.cell{
+		margin: 2vw 0;
 		margin-left: 10vw;
 	}
-	.description-box{
-		padding: 3%;
-		font-size: 1vw;
-		display: block;
-		width: 100%;
-		background-color: white;
-		border-radius: 1%;
-	}
-	.the-animal{
-		width: 100%;
-		display: grid;
-		grid-template-columns:30% 70%;
-	}
-	.head-cell img{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	h2{
-		font-family: Play;
-		font-weight: 700;
-		font-size: 2vw;
-	}
-	.superior-list {
-		background-color: white;
-		list-style: none;
-		padding: 0.5vw;
-		border-radius: 1%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-		font-size: 1vw;
-	}
-	.superior-list > li{
-		padding: 1vh;
-	}
-	.superior-list > li:hover{
-		background-color: #f2f2f2ff;
-	}
-	.head-cell{
-		display: block;
-	}
-	.desc ul {
-		width: auto;
-		padding-right: 1vw;
-		border-radius: 1%;
-		text-align: left;
+	#inside-cell{
 		position: absolute;
-		top: 4.1%;
-		left: 10%;
-		display: none;
-		background-color: white;
-		list-style-type: square;
+		top: 12vh;
+		left: 18vw;
+		width: 35%;
 	}
-	.special-ka ul {
-		width: 55vw;
+	#envelope{
+		position: absolute;
+		top: 32vh;
+		left: 26.7vw;
+		width: 16%;
 	}
-	.desc ul li{
-		padding: 0.3vh;
-		font-size: 1vw;
+	#nuclues{
+		position: absolute;
+		top: 42vh;
+		left: 33.6vw;
+		width: 4%;
 	}
-	.the-animal ul li:hover .desc ul{
-		display: block;
+	#golgi{
+		position: absolute;
+		top: 58vh;
+		left: 20vw;
+		width: 12%;
+	}
+	#rough-endo{
+		position: absolute;
+		top: 50.5vh;
+		left: 36.9vw;
+		width: 13.5%;
+	}
+	#smooth-endo{
+		position: absolute;
+		top: 28.5vh;
+		left: 43.6vw;
+		width: 6.5%;
+	}
+	#vacuole{
+		position: absolute;
+		top: 20.5vh;
+		left: 40.6vw;
+		width: 4.5%;
+	}
+	#lyso{
+		position: absolute;
+		top: 47.5vh;
+		left: 19.6vw;
+		width: 3.5%;
+	}
+	#mitochondria{
+		position: absolute;
+		top: 23.5vh;
+		left: 23.6vw;
+		width: 8.5%;
+	}
+	#mitochondria-1{
+		position: absolute;
+		top: 70.5vh;
+		left: 32.6vw;
+		width: 5.2%;
+	}
+	#perox-2{
+		position: absolute;
+		top: 38.5vh;
+		left: 20.6vw;
+		width: 2%;
+	}
+	#perox-1{
+		position: absolute;
+		top: 52.5vh;
+		left: 49.6vw;
+		width: 2%;
+	}
+	#ribosomes
+	{
+		position: absolute;
+		top: 29.3vh;
+		left: 28.9vw;
+		width: 22%;
+
+	}
+	#ribo-1{
+		position: absolute;
+		top: 39.3vh;
+		left: 24.9vw;
+		width: 0.5%;
+	}
+	#ribo-2{
+		position: absolute;
+		top: 43.3vh;
+		left: 23.9vw;
+		width: 0.5%;
+	}
+	#ribo-3{
+		position: absolute;
+		top: 67.3vh;
+		left: 33.9vw;
+		width: 0.8%;
+	}
+	#ribo-4{
+		position: absolute;
+		top: 30.3vh;
+		left: 28.9vw;
+		width: 2%;
+	}
+	#ribo-5{
+		position: absolute;
+		top: 30.3vh;
+		left: 28.9vw;
+		width: 3%;
+	}
+	#ribo-6{
+		position: absolute;
+		top: 66.3vh;
+		left: 46.9vw;
+		width: 0.5%;
+	}
+	#ribo-7{
+		position: absolute;
+		top: 30.3vh;
+		left: 28.9vw;
+		width: 2%;
+	}
+	#ribo-8{
+		position: absolute;
+		top: 63.3vh;
+		left: 44.9vw;
+		width: 0.5%;
 	}
 
 }
