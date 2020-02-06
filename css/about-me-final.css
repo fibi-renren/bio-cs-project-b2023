@@ -144,6 +144,7 @@ a:hover .icon{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		/**overflow: hidden;**/
 	}
 	.ribbon-mobile{
 		display: none;
@@ -169,12 +170,6 @@ a:hover .icon{
 	.menu-mobile{
 		display:none;
 	}
-	.desktop{
-		display: block;
-		font-size: 1.3vw;
-		text-align: center;
-		padding: 0;
-	}
 	h1{
 		font-style: italic;
 		font-size: 6vw;
@@ -191,20 +186,22 @@ a:hover .icon{
 		text-align: left;
 	}
 	#you{
-		width: 78%;
+		width: 75%;
 	}
-	.social-media{
+	.list{
+		display: none;
+		position: absolute;
+	}
+	.desktop{
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		padding: 0;
 		margin-top: 0;
 	}
-	.desktop a{
-		font-size: 3vw;
+	.desktop ul{
+		font-size: 1.5vw;
 		padding: 0 1vw;
-	}
-	.desktop a:hover{
-		color: #eeeeeeff;
-	}
-	.twinkling{
-		display: none;
 	}
 	.placeholder{
 		display: block;
