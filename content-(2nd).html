@@ -40,9 +40,18 @@
 					</div>
 					
 					<div class = "robot robot-dark placeholder">
-						<a class = "wrapper heyo" href = "content-(2nd).html">
+						<a class = "wrapper heyo" href = "#animal-cell">
 							<div class = "menu animal-cell">	
 								<span>Animal Cell</span>
+								<div class = "icon"> <i class="fas fa-file-alt fa-1x"></i> </div>
+							</div>
+						</a>	
+					</div>
+
+					<div class = "robot robot-dark placeholder">
+						<a class = "wrapper heyo-1" href = "#plant-cell">
+							<div class = "menu animal-cell">	
+								<span>Plant Cell</span>
 								<div class = "icon"> <i class="fas fa-file-alt fa-1x"></i> </div>
 							</div>
 						</a>	
@@ -61,11 +70,16 @@
 
 			<main> 
 				<div class = "splash-page" id = "index">
-					<div class = "title"> <h1>eukaryotes</h1> </div>
+					<div class = "title"> 
+						<h1>eukaryotes</h1>
+						<div class = "creators">
+						 by SAN JUAN, BULATAO, MORACA
+						 </div> 
+					</div>
 				</div>
 
 		<div class = "ultimate-lumpia-wrapper">
-			<div class = "lumpia-wrapper"> 
+			<div class = "lumpia-wrapper " id="animal-cell"> 
 
 				<div class ="cell">
 
@@ -157,7 +171,8 @@
 				</div>
 			</div>
 
-			<div class = "plant-cell-wrapper"> 
+			<div class = "plant-cell-wrapper " > 
+				<div id="plant-cell"></div>
 				<div class = "content-plant">
 					<h1> the plant cell </h1>
 					<div class = "instructions">
@@ -245,9 +260,32 @@
 					
 
 				</div>
-
-
 			</div> 
+		
+		<footer>
+			<div id = "resources">
+				<b>RESOURCES: </b>
+				<div>
+					Cover Photo by <a href="/photographer/hisks-57682">Krzysztof (Kriss) Szkurlatowski</a> from <a href="https://freeimages.com/">FreeImages</a>.
+				</div>
+				<div>
+					Animal cell by Phoebe using <a href="https://www.britannica.com/science/peroxisome"> this model</a> as reference.
+				</div>
+				<div>
+					Plant cell by Ella using <a href="https://www.britannica.com/science/peroxisome"> this model</a> as reference.
+				</div>
+				<div>
+					Washi tape from <a href = "https://picsart.com/i/sticker-washitape-washi-tape-patternfreetoedit-239552629067212"> here</a>.
+				</div>
+				<div> 
+					Corkboard wallpaper from <a href= "http://getwallpapers.com/collection/cork-board-wallpaper"> here</a>.
+				</div>
+				<div> 
+					Content mostly from Campbell, N. A., Reece, J. B., Mitchell, L. G.(1946).The Cell. <i>Biology</i> (pp.100-124).
+				</div>
+			</div>
+		</footer> 
+
 
 		</div>
 
@@ -258,19 +296,6 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 		<script type="text/javascript">
-
-			function showMenu()
-			{
-				var y = window.scrollY;
-				if (y >= 400){
-					document.getElementbyId("navbar").className = "mega-lumpia-wrapper show";
-				}
-				else{
-					document.getElementbyId("navbar").className = "mega-lumpia-wrapper hide";
-				}
-			}
-
-			window.addEventListener("scroll", showMenu);
 
 			function reg(organelle_Name) 
 			{
