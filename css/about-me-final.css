@@ -214,20 +214,29 @@ a:hover .icon{
 	.dropdown-content{
 		display: none;
 		position: absolute;
-		left:0;
-		bottom:2.5vh;
+		left:2.5vh;
+		bottom:4vh;
 		padding: 0;
 		padding-bottom: 1vh;
 		line-height: 0.6;
+		text-align: left;	
+		transition: 0.3s;
+	}
+	.twt{
+		left: 12vh;
+	}
+	.insta{
+		left: 29vh;
 	}
 	.dropdown-content a{
 		font-size: 1.4vw;
 		transition: 0.4s;
 	}
 	.desktop > ul > li:hover .dropdown-content{
+		transition: 0.3s;
 		display: block;
 	}
-	.dropdown-content a:hover{
+	.dropdown-content li:hover a{
 		transition: 0.4s;
 		color: #212529;
 	}
