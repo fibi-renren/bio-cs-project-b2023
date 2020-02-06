@@ -11,6 +11,8 @@
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:900i&display=swap" rel="stylesheet"> 
+
 		<link rel="stylesheet" type="text/css" href="css/content.css" />
 	</head>
 	<body>
@@ -64,11 +66,12 @@
 
 				  	<img onmouseover="highlight('plasma-membrane')" onmouseout="reg('plasma-membrane')" src="img/parts/plasma-membrane.png" alt="cell" id = "plasma-membrane"/>
 
-					<img onmouseover = "highlightRibo(this)" onmouseout = "regRibo(this)" src = "img/parts/ribosomes.png"/ id = "ribosomes">
-
 				 	<img id="inside-cell" src="img/parts/inside-cell.png"/>
 
+				 	<img onmouseover = "highlightRibo(this)" onmouseout = "regRibo(this)" src = "img/parts/ribosomes.png"/ id = "ribosomes">
+
 				  	<img id="envelope" src="img/parts/envelope.png"/>
+
 
 				   	<img onmouseover="highlightRibo(this)" onmouseout ="regRibo(this)" src ="img/parts/ribo-1.png" id= "ribo-1">
 				   	<img onmouseover="highlightRibo(this)" onmouseout ="regRibo(this)" src ="img/parts/ribo-2.png" id= "ribo-2">
@@ -96,10 +99,56 @@
 				   	<img onmouseover="highlightPero(this)" onmouseout="regPero(this)" src = "img/parts/perox-1.png" id = "perox-1"/>
 				   	<img onmouseover="highlightPero(this)" onmouseout="regPero(this)" src = "img/parts/perox-2.png" id = "perox-2">
 
-				   	
+				</div>
 
+				<div class = "content">
+					<h1> the animal cell </h1>
+					<div class = "instructions">
+						(Hover on any cell organelle to view its description.)
+					</div>
+					<div class = "box"> 
+						<div class = "hide" id="plasma-membrane-text">
+							<h2> plasma membrane </h2>
+							<p> Acts as a <b>barrier</b> between the organelles and the outside environment. It also facilitates the passage of oxygen, nutrients and water to service the cell, as well as communication and signalling between other cells. </p>
+						</div>
+						<div class = "hide" id="ribosome-text">
+							<h2> ribosome </h2>
+							<p> The organelle in charge of <b>protein formation</b> needed for different cell processes. Its location determines its function, although both are structurally identical and interchangeable. Most ribosomes are suspended in the cytosol, known as <b>free ribosomes</b>, while some are attached to the Rough Endoplasmic Reticulum, now classified as a <b>bound ribosome</b>. These bound ribosomes are proteins destined for membrane inclusion, packaging with certain organelles, and export. </p>
+						</div>
+						<div class = "hide" id="nuclues-text">
+							<h2> nucleus </h2>
+							<p>This is the region where the majority of the <b>cell’s genetic material</b> is contained. Usually known as the ‘brain’ of the cell. In eukaryotes, this is called the nucleus which contains a nuclear envelope, nuclear lamina and chromatin which are all designed for protection of and/or transportation of signals from and to the nucleus. </p>
+						</div>
+						<div class = "hide" id="smooth-endo-text">
+							<h2> smooth endoplasmic reticulum </h2>
+							<p>Functions in <b>metabolic processes</b> like lipid synthesis, carbohydrate metabolism, and drug and poison detoxification. </p>
+						</div>
+						<div class = "hide" id="rough-endo-text">
+							<h2> rough endoplasmic reticulum </h2>
+							<p>Functions like the Smooth ER but has additional duties like the formation of secretory proteins that depart from the organelle and become transport vesicles for the cell. This is also the <b>main site of protein synthesis</b> due to the abundance of ribosomes. It also stores secretory proteins different from the proteins produced by free ribosomes. </p>
+						</div>
+						<div class = "hide" id="golgi-text">
+							<h2>golgi apparatus</h2>
+							<p> Acts as the “factory” of the cell, which <b>manufactures, stores, sorts and transports</b> the vesicles made by the Rough ER. It can also produce certain macromolecules and organelles by itself, like lysosomes. </p>
+						</div>
+						<div class = "hide" id="lyso-text">
+							<h2>lysosome</h2>
+							<p> Performs <b>intracellular digestion</b>, most frequently phagocytosis. It also digests macromolecules through hydrolysis. As well as regularly performs autophagy, the recycling of one’s own materials </p>
+						</div>
+						<div class = "hide" id="perox-text">
+							<h2>peroxisome</h2>
+							<p> The oxidative organelle that <b>oxidizes fatty and amino acids in the cell </b>. It also produces hydrogen peroxide (where the name of the cell originates) as well as a catalase that counteracts its toxicity. It also produces a phospholipid precursor that starts the synthesis of lipids and carbohydrates, which then goes to the SER for further synthesis. Lastly, like the lysosome, the peroxisome also regularly performs autophagy.  </p>
+						</div>
+						<div class = "hide" id="vacuole-text">
+							<h2>vacuole</h2>
+							<p> The main organelle that regularly performs homeostasis. In prokaryotes and animals, they have <b>food vacuoles</b> where they store food from phagocytosis before being digested by the lysosome. </p>
+						</div>
+						<div class = "hide" id="mitochondria-text">
+							<h2>mitochondrion</h2>
+							<p> The site of <b>cellular respiration that produces ATP</b>, the energy that the cell can use. Popularly known as the ‘powerhouse of the cell’ </p>
+						</div>
 
-
+					</div>
 
 				</div>
 
@@ -117,32 +166,38 @@
 			{
 				var organelle = organelle_Name;
 			 	document.getElementById(organelle).src = "img/parts/" + organelle + ".png"; 
+			 	document.getElementById(organelle+"-text").className = "hide";
 			}
 
 			function highlight(organelle_Name) 
 			{
 				var organelle = organelle_Name;
-			  	document.getElementById(organelle).src = "img/parts/" + organelle + "-hl" + ".png"; 
+			  	document.getElementById(organelle).src = "img/parts/" + organelle + "-hl" + ".png";
+			  	document.getElementById(organelle+"-text").className = "show"; 
 			}
 			function highlightMito(x)
 			{
 				document.getElementById("mitochondria").src = "img/parts/mitochondria-hl.png";
 				document.getElementById("mitochondria-1").src = "img/parts/mitochondria-1-hl.png";
+				document.getElementById("mitochondria-text").className = "show"; 
 			}
 			function regMito(x)
 			{
 				document.getElementById("mitochondria").src = "img/parts/mitochondria.png";
 				document.getElementById("mitochondria-1").src = "img/parts/mitochondria-1.png";
+				document.getElementById("mitochondria-text").className = "hide"; 
 			}
 			function highlightPero(x)
 			{
 				document.getElementById("perox-1").src = "img/parts/perox-1-hl.png";
 				document.getElementById("perox-2").src = "img/parts/perox-2-hl.png";
+				document.getElementById("perox-text").className = "show";
 			}
 			function regPero(x)
 			{
 				document.getElementById("perox-1").src = "img/parts/perox-1.png";
 				document.getElementById("perox-2").src = "img/parts/perox-2.png";
+				document.getElementById("perox-text").className = "hide";
 			}
 			function highlightRibo(x)
 			{
@@ -154,6 +209,7 @@
 				document.getElementById("ribo-6").src = "img/parts/ribo-6-hl.png";
 				document.getElementById("ribo-7").src = "img/parts/ribo-7-hl.png";
 				document.getElementById("ribo-8").src = "img/parts/ribo-8-hl.png";
+				document.getElementById("ribosome-text").className = "show";
 			}
 			function regRibo(x)
 			{
@@ -165,6 +221,7 @@
 				document.getElementById("ribo-6").src = "img/parts/ribo-6.png";
 				document.getElementById("ribo-7").src = "img/parts/ribo-7.png";
 				document.getElementById("ribo-8").src = "img/parts/ribo-8.png";
+				document.getElementById("ribosome-text").className = "hide";
 			}
 
 		</script>
