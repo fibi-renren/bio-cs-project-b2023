@@ -23,6 +23,7 @@ body{
 	margin-bottom: 2vh;
 	font-size: 3.5vw;
 }
+
 .card a{
 	font-size: 3.3vw;
 	color: black;
@@ -144,7 +145,7 @@ a:hover .icon{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		/**overflow: hidden;**/
+		overflow: hidden;
 	}
 	.ribbon-mobile{
 		display: none;
@@ -156,7 +157,7 @@ a:hover .icon{
 		margin: 0 2vw;
 		margin-left: 4.3vw;
 	}
-	.social-media, .middle, .text-content{
+	.middle, .text-content{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -181,27 +182,54 @@ a:hover .icon{
 		line-height: 0.8;
 		padding: 0;
 		text-align: right;
+		font-size: 2.5vw;
 	}
 	.left{
 		text-align: left;
 	}
-	#you{
-		width: 75%;
+	.left span{
+		font-size: 2vw;
 	}
-	.list{
-		display: none;
-		position: absolute;
+	#you{
+		width: 84%;
 	}
 	.desktop{
+		margin-top: 0;
+		display: block;
+	}
+	.desktop > ul{
 		display: flex;
 		flex-direction: row;
-		text-align: center;
 		padding: 0;
-		margin-top: 0;
 	}
-	.desktop ul{
+	.desktop > ul > li > a {
+		padding: 0;
+		padding-top: 1vh;
 		font-size: 1.5vw;
-		padding: 0 1vw;
+		padding-right: 3vh;
+	}
+	li{
+		list-style-type: none;
+	}
+	.dropdown-content{
+		display: none;
+		position: absolute;
+		left:0;
+		bottom:2.5vh;
+		padding: 0;
+		padding-bottom: 1vh;
+		line-height: 0.6;
+	}
+	.dropdown-content a{
+		font-size: 1.4vw;
+		transition: 0.4s;
+	}
+	.desktop > ul > li:hover .dropdown-content{
+		display: block;
+	}
+	.dropdown-content a:hover{
+		transition: 0.4s;
+		color: #212529;
 	}
 	.placeholder{
 		display: block;
