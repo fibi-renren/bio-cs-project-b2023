@@ -260,17 +260,11 @@ h2{
 		left: 33.9vw;
 		width: 0.8%;
 	}
-	#ribo-4{
-		position: absolute;
-		top: 30.3vh;
-		left: 28.9vw;
-		width: 2%;
-	}
 	#ribo-5{
 		position: absolute;
-		top: 30.3vh;
-		left: 28.9vw;
-		width: 3%;
+		top: 50.3vh;
+		left: 23.9vw;
+		width: 1.2%;
 	}
 	#ribo-6{
 		position: absolute;
@@ -280,9 +274,9 @@ h2{
 	}
 	#ribo-7{
 		position: absolute;
-		top: 30.3vh;
+		top: 19.3vh;
 		left: 28.9vw;
-		width: 2%;
+		width: 0.5%;
 	}
 	#ribo-8{
 		position: absolute;
