@@ -1,0 +1,450 @@
+html{
+	font-size: 100%;
+}
+
+#bearer-of-the-truth{
+	background-color: #0303038c;
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+#message-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+}
+#message{
+	width: 80%;
+	position: relative;
+	top: 10vh;
+	z-index: 10000;
+	background-color: white;
+	padding: 1rem 1rem;
+	font-size: 1rem;
+	transition: 0.4s;
+}
+body{
+	margin:2vh 0;
+	width: 100vw;
+	height: auto;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+}
+body>h1{
+	font-style: italic;
+	font-size: 1.2rem;
+}
+body>h2{
+	font-style: italic;
+	font-size: 0.7rem;
+	margin:0;
+}
+#animal-cell,#plant-cell{
+	width:100%;
+	height: 20vh;
+	margin: 2vh 0;
+	position: relative;
+}
+#animal-cell{
+	margin: 4vh 0;
+}
+#animal-cell span, #plant-cell span{
+	color: white;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	padding: 0 0vw 1vh 3vw;
+	font-style: 1rem;
+}
+.img-container,.shadow{
+	width: 100%;
+	height: 100%;	
+	overflow: hidden;
+}
+#animal-cell img, #plant-cell img{
+	width:100%;
+	transform: scale(1.5);
+	position: relative;
+	bottom: 60%;
+	transition: 0.4s;
+}
+#animal-cell:hover img, #plant-cell:hover img{
+	transform: scale(2);
+	transition: 0.4s;
+}
+#animal-cell:hover .shadow,#plant-cell:hover .shadow{
+	opacity: 1;
+	transition: 0.4s;
+}
+.shadow{
+	background-color: #00000061;
+	position: absolute;
+	top:0;
+	opacity: 0;
+	transition: 0.4s;
+}
+.card{
+	text-decoration: none;
+	color: white;
+	width: 80%;
+	height: auto;
+}
+#menu,#splash,main{
+	display: none;
+}
+@media screen and (min-width: 1000px){
+	#message{
+		width: 30%;
+		line-height: 1.5;
+	}
+	body{
+		background-color: white;
+		display: block;
+		margin:0;
+		width: auto;
+		color: #292929ff;
+	}
+	main{
+		display: block;
+		position: relative;
+	}
+	body>h1,body>h2,.card{
+		display: none;
+	}
+	#splash{
+		width: 100%;
+		height: 100vh;
+		background: url('../img/plant-cells.jpg');
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#splash>h1, #splash>h2{
+		font-size: 4rem;
+		font-style: italic;
+		letter-spacing: 0.3rem;
+		color: #292929ff;
+		margin:1rem 0;
+	}
+	#splash>h2{
+		font-size:1rem;
+		margin: 0 0 1rem 0;
+	}
+	#splash>a>img{
+		width: 3rem;
+	}
+	#menu{
+		width: 100%;
+		height: 3rem;
+		position: sticky;
+		top: 0;
+		background-color: white;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content: center;
+		color: #292929ff;
+		box-shadow: 0 0.05rem 0.4rem 0.1rem rgba(105,105,105,0.45);
+	}
+	#menu>span{
+		display: inline-block;
+		margin: 0 1.5rem;
+		height: 80%;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		letter-spacing: 0.05rem;
+		cursor: pointer;
+		transition: 0.3s;
+		padding:0 0.2rem;
+	}
+	#menu>span>a{
+		text-decoration: none;
+		color: #292929ff;
+	}
+	#active{
+		border-bottom: 0.25rem solid #2ba8a8ff;
+	}
+	#dead{
+		border-bottom: 0.25rem solid white;
+	}
+	#menu>span:hover{
+		background-color: #fcf9f7ff;
+		transition: 0.3s; 
+	}
+	#content-wrapper{
+		width:100%;
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 20% 75%;
+		grid-column-gap: 5%
+	}
+	.container{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#list-container{
+		border-right: 0.1rem solid rgba(105,105,105,0.10);
+	}
+	#list{
+		margin-left: 10%;
+		display: flex;
+		flex-direction: column;
+		line-height: 2;
+	}
+	#list>a{
+		text-decoration: none;
+		color: #292929ff;
+		transition: 0.4s; 
+		cursor: pointer;
+	}
+	#list a:hover{
+		background-color: rgba(105,105,105,0.10);
+		transition: 0.4s; 
+	}
+	#grid-container{
+		height: 80%;
+		display: grid;
+		grid-template-rows: 70% 30%;
+		grid-row-gap:5%;
+		margin-right: 5%;
+	}
+	#images-container{
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: 45% 45%;
+		grid-column-gap: 10%;
+	}
+	#images-container>div>div>span{
+		position: absolute;
+		bottom: 0;
+	}
+	#animal-cell-img,#plant-cell-img{
+		overflow: hidden;
+		position: relative;
+	}
+	#animal-cell-img div,#plant-cell-img div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		transition: 0.4s;
+		position: relative;
+		transition: 0.4s;
+	}
+	#animal-cell-img>span,#plant-cell-img>span{
+		letter-spacing: 0.3rem;
+		position: absolute;
+		bottom: 1rem;
+		left: 1rem;
+		z-index: 9999;
+		font-size: 1.5rem;
+		color: #2ba8a8ff;
+	}
+	#animal,#plant{
+		width:67%;
+	}
+	.hide-text{
+		display: none;
+	}
+	.show-text{
+		display: block;
+	}
+	#text-container{
+		justify-content: flex-start;
+		align-items: center;
+	}
+	#text-container div h2{
+		margin:0;
+		font-size: 1.5rem;
+		font-style: italic;
+		letter-spacing: 0.1rem;
+	}
+	#text-container div p{
+		margin: 0.3rem 0 0 0;
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+	.descrip{
+		width: 80%;
+	}
+	.descrip>p{
+		text-indent: 2rem;
+	}
+	#instructions{
+		position: absolute;
+		bottom: 1rem;
+		right: 0.5rem;
+		width: 25rem;
+		height: 7rem;
+		background-color: #2ba8a8ff;
+		color: white;
+		border-radius: 0.7rem;
+		display: grid;
+		grid-template-columns: 80% 20%
+	}
+	#help{
+		margin-left:1rem;
+		display: flex;
+		justify-content:flex-start;
+		align-items:flex-end;
+		margin-bottom: 0.5rem;
+	}
+ 	#help p{
+ 		margin:0;
+ 		font-size: 1rem;
+ 	}
+ 	#help p:first-child{
+ 		font-size: 1.3rem;
+ 		margin-bottom: 0.3rem;
+ 	}
+ 	#help div{
+ 		height: auto;
+ 	}
+ 	#exit{
+ 		display: flex;
+		justify-content:flex-end;
+		margin-right: 1rem;
+		margin-top: 1rem;
+ 	}
+ 	#exit img{
+ 		width: 1.3rem;
+ 	}
+ 	#exit div{
+ 		height: auto;
+ 		width: 1.3rem;
+ 	}
+ 	#exit div:hover{
+ 		cursor: pointer;
+ 	}
+ 	.plasma-membrane_animal{
+ 		transform: scale(1);
+ 	}
+ 	.plasma-membrane_plant{
+ 		transform: scale(4);
+    	left: -70%;
+ 	}
+ 	.cell-wall_animal{
+ 		transform: scale(1);
+ 	}
+ 	.cell-wall_plant{
+ 		transform: scale(1);
+ 	}
+ 	.ribosome_animal{
+ 		transform: scale(5);
+   		left: -60%;
+    	bottom: 80%;
+ 	}
+ 	.ribosome_plant{
+ 		transform: scale(4);
+    	top: 70%;
+   		left: -40%;
+ 	}
+ 	.nucleus_animal{
+ 		transform: scale(4);
+ 	}
+ 	.nucleus_plant{
+ 		transform: scale(4);
+    	left: -40%;
+    	bottom: 15%;
+ 	}
+ 	.smooth-er_animal{
+ 	    transform: scale(4);
+    	left: -80%;
+    	top: 30%;
+ 	}
+ 	.smooth-er_plant{
+ 		transform: scale(5);
+    	left: -55%;
+    	top: 30%;
+ 	}
+ 	.rough-er_animal{
+ 		transform: scale(3.5);
+    	bottom: 60%;
+    	left: -50%;
+ 	}
+	.rough-er_plant{
+ 		transform: scale(3.9);
+    	top: 50%;
+    	left: -50%;
+ 	}
+	.vacuole_animal{
+ 		transform: scale(5);
+    	top: 90%;
+    	left: -50%;
+ 	}
+	.vacuole_plant{
+ 		transform: scale(3.4);
+   		top: 25%;
+    	left: 10%;
+ 	}
+	.mitochondrion_animal{
+ 		transform: scale(3);
+    	top: 60%;
+    	left: 30%;
+ 	}
+	.mitochondrion_plant{
+ 		transform: scale(3.5);
+    	bottom: 40%;
+    	left: 50%;
+ 	}
+	.golgi-apparatus_animal{
+	    transform: scale(3);
+    	bottom: 50%;
+    	left: 40%;
+ 	}
+	.golgi-apparatus_plant{
+ 		transform: scale(4);
+    	bottom: 50%;
+ 	}
+	.lysosome_animal{
+ 		transform: scale(5);
+	    bottom: 40%;
+	    left: 120%;
+ 	}
+	.lysosome_plant{
+ 		transform: scale(4.5);
+	    top: 120%;
+	    left: 30%;
+ 	}
+	.peroxisome_animal{
+ 		transform: scale(4);
+    	left: 75%;
+ 	}
+	.peroxisome_plant{
+	    transform: scale(4.5);
+	    left: 100%;
+	    top: -20%;
+ 	}
+	.chloroplast_plant{
+ 		transform: scale(3.7);
+    	left: 60%;
+    	top: 20%;
+ 	}
+	.chloroplast_animal{
+ 		transform: scale(1);
+ 	}
+
+ }

@@ -1,0 +1,226 @@
+html{
+	margin:0;
+	font-size: 100%;
+}
+body{
+	background-color: white;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	width: 100vw;
+	height: auto;
+	margin:0;
+}
+#containerNav{
+	width:0;
+	height:100vh;
+	position: absolute;
+	top:0;
+}
+#navBar{
+	top:0;
+	z-index: 9999;
+	position: absolute;
+	background-color: white;
+	color: #292929ff;
+	width: 80%;
+	height: 100vh;
+	left: -80%;
+	overflow: scroll;
+}
+#navBar ul{
+	padding: 0;
+	margin: 0;
+}
+#navBar>a{
+	text-decoration: none;
+}
+#navBar>a>div{
+	font-size:1rem;
+	padding: 2vh 5vw 2vh 12vw;
+	color: #292929ff;
+}
+#plant-cell{
+	background-color: #fcf9f7ff;
+	margin-bottom: 1vh; 
+}
+#plant-cell:hover, #animal-cell:hover{
+	cursor: pointer;
+}
+#navBar>ul>li{
+	list-style-type: none;
+	line-height: 1;
+	font-size:1rem;
+	padding: 2vh 5vw 2vh 12vw;
+	cursor: pointer;
+}
+#navBar > ul > li > a{
+	text-decoration: none;
+	color: #292929ff;
+}
+#navBar>ul>li:first-child{
+	border-top: 0.1rem solid #fcf9f7ff;
+}
+#navBar>ul> li:last-child{
+	border-bottom: 0.1rem solid #fcf9f7ff;
+}
+#navBar ul > li:hover{
+	background-color: #f9d74aff;
+	transition: 0.4s;
+}
+#navBar ul > li:hover a{
+	color: #292929ff;
+}
+#menu{
+	margin-left: 6.5%;
+	margin-top: 6%;
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+}
+#menu>span{
+	display: inline-block;
+	padding-left: 1.2rem;
+	font-size: 1.1rem;
+	color: #292929ff;
+}
+#navBarIcon{
+	width: 1.5rem;
+}
+
+/** MAIN CONTENT **/
+#image-container{
+	width:100vw;
+	height: 100vh;
+	transition: 0.5s;
+	display: block;
+}
+#image{
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+}
+#plant-cell-img{
+	width: 95%;
+}
+.show-container,.show-text{
+	display: block;
+}
+.hide-container,.hide-text{
+	display: none;
+}
+#img-text-container{
+	height: 95vh;
+	display: none;
+	grid-template-rows: 70% 30%;
+	padding: 2vh 3vw 0vh 3vw;
+	transition: 0.5s;
+	overflow: scroll;
+}
+#img-part-parent{
+	overflow: hidden;
+}
+#img-part{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+#text-part{
+	padding: 1vh 1vw 1vh 1vw;
+}
+.plasma-membrane{
+	position: relative;
+    transform: scale(6);
+    bottom: 110%;
+    left: -90%;
+}
+.ribosome{
+	position: relative;
+    transform: scale(4.3);
+    top: 75%;
+    left: -70%;
+}
+.nucleus{
+	transform: scale(4.3);
+    position: relative;
+    left: -70%;
+    bottom: 20%;
+}
+.smooth-endoplasmic-reticulum{
+	position: relative;
+    transform: scale(3.5);
+    top: 20%;
+    left: -55%;
+ }
+ .rough-endoplasmic-reticulum{
+ 	position: relative;
+    transform: scale(3.2);
+    top: 50%;
+    left: -55%;
+ }
+ .vacuole{
+    position: relative;
+    transform: scale(3);
+    top: 20%;
+    left: 20%;
+
+ }
+ .mitochondrion{
+ 	position: relative;
+    transform: scale(4);
+    top: 70%;
+    left: 80%;
+}
+
+.golgi-apparatus{
+    position: relative;
+    transform: scale(3.3);
+    left: -5%;
+    bottom: 45%;
+ }
+ .lysosome{
+    position: relative;
+    transform: scale(4);
+    top: 105%;
+    left: 40%;
+ }
+.peroxisome{
+    position: relative;
+    transform: scale(6);
+    left: 200%;
+    bottom: 30%;
+ }
+ .cell-wall{
+ 	transform: scale(1);
+ }
+ .chloroplast{
+    position: relative;
+    transform: scale(5);
+    left: 130%;
+    top: 20%;
+ }
+ .text-part{
+ 	padding: 1vh;
+ }
+ .text-part>h2{
+ 	text-align: center;
+ 	font-size: 1.2rem;
+ 	letter-spacing: 0.1em;
+ 	font-weight: 700;
+ 	font-style: italic;
+ 	margin:0;
+ 	color: #2ba8a8ff;
+}
+.text-part>p{
+	font-size: 1rem;
+	margin: 1vh 0;
+	line-height: 1.4;
+	text-indent: 1rem;
+}
